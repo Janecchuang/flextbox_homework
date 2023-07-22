@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Document</title>
+			<link rel="stylesheet" href="./reset.css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+	</head>
+	<style>
+		body {
+			font-family: Bruno Ace SC;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.container {
+			width: 1296px;
+			margin: 0 auto;
+		}
+
+		.navbar {
+			display: flex;
+			list-style: none;
+			justify-content: space-around;
+			padding: 40px 0px 24px 0px;
+		}
+
+		.nav-item-container {
+			width: 306px;
+			
+		}
+
+		.navText {
+			color: #D1D1D1;
+		}
+
+		.greeting_bg {
+			background: #000000;
+		}
+
+		.greeting {
+			display: flex;
+			padding: 72px 0px 72px 0px;
+			align-items: center;
+		}
+
+		.greetingWord {
+			color: #FFFFFF;
+		}
+		
+		.photo {
+			margin-right: 24px;
+		}
+
+		.title {
+			font-size: 64px;
+			line-height: 96px;
+		}
+
+		.william {
+			color: #00FFA3;
+			font-size: 128px;
+			line-height: 192px;
+			text-align: right;
+		}
+
+		.waterbg {
+			background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+		}
+
+		.introduce {
+			color: #FFFFFF;
+		}
+
+		.introTitle {
+			font-size: 64px;
+			line-height: 96px;
+			padding-top: 160px;
+		}
+
+		.introContent {
+			font-size: 24px;
+			line-height: 36px;
+			margin-top: 36px;
+		}
+
+		.introduct {
+			width: 526px;
+		}
+
+		.d-flex {
+			display: flex;
+		}
+
+		.sparkle_sm {
+			width: 746px;
+			padding: 160px 0px 160px 24px;
+		}
+
+		.number {
+			border: 1px solid #E3E3E3;
+			width: 306px;
+			height: 148px;
+			padding: 16px;
+			border: 1px;
+			gap: 4px;
+		}
+
+		.number_block {
+			font-size: 20px;
+			line-height: 30px;
+		}
+
+		.number_block_s {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.cardArea {
+			width: 636px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.card {
+			box-shadow: 4px 4px 4px 0px #00000014;
+			width: 306px;
+			padding: 16px;
+			border: 1px;
+			gap: 4px;
+		}
+
+		.aboutme {
+			width: 526px;
+		}
+
+		.aboutMeWord {
+			font-size: 64px;
+			line-height: 96px;
+		}
+
+		.aboutDetail {
+			font-size: 24px;
+			line-height: 36px;
+			margin-top: 36px;
+		}
+
+		.contactBg_1 {
+			background-color: #FFFFFF;
+			width: 185px;
+			height: 48px;
+			top: 480px;
+			left: 451px;
+			padding: 12px 24px 12px 24px;
+			border-radius: 32px;
+			gap: 4px;
+			font-size: 16px;
+			line-height: 24px;
+			margin-left: 461px;
+		}
+
+		.contactBg {
+			background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+			justify-content: center;
+		}
+
+		.contact {
+			font-size: 64px;
+			line-height: 96px;
+			color: #FFFFFF;
+			border-radius: 32px;
+			align-items: center;
+		}
+
+		.d-block {
+			display: block;
+		}
+
+
+		.footer {
+			background-color: #000000;
+			justify-content: center;
+		}
+
+		.footerText {
+			font-size: 16px;
+			line-height: 24px;
+			color: #FFFFFF;
+			padding: 40px 0px;
+		}
+
+		.contactMe {
+			text-align: right;
+		}
+
+		.aboutArea {
+			padding: 160px 0px 160px 0px;
+		}
+
+		.socialMedia {
+			display: flex;
+		}
+
+		.contactArrow {
+			align-items: center;
+			padding: 127px 0px 127px 0px;
+			margin-right: 121px;
+		}
+
+		.contactMeArea {
+			align-items: center;
+		}
+
+		.myProject {
+			font-size: 64px;
+			line-height: 96px;
+			width: 746px;
+			margin-left: auto;
+		}
+
+		.myProjectText {
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.plant {
+			margin-right: 24px;
+		}
+
+		.seeMore {
+			font-size: 16px;
+			line-height: 24px;
+			width: 185px;
+			height: 48px;
+			top: 148px;
+			padding: 12px 24px 12px 24px;
+			border-radius: 32px;
+			gap: 4px;
+			background: #000000;
+			align-items: center;
+		}
+
+		.seeMoreText {
+			color: #FFFFFF;
+		}
+
+		.seeMoreArrow {
+			align-items: center;
+		}
+
+		.computerText {
+			flex-direction: column;
+		}
+
+		.photoBottom {
+			margin-top: 28px;
+		}
+
+		.align-items-center {
+			align-items: center;
+		}
+
+		.discord {
+			width: 170px;
+			height: 170px;
+		}
+
+		.mr-5 {
+			margin-right: 20px;
+		}
+
+		.cards {
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.mt-3 {
+			margin-top: 12px;
+		}
+
+		.mb-3 {
+			margin-bottom: 12px;
+		}
+
+		.ms-3 {
+			margin-left: 12px;
+		}
+
+		.me-3 {
+			margin-right: 12px;
+		}
+
+		.me-6 {
+			margin-right: 24px;
+		}
+
+		.computerContent {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.projects {
+			padding: 160px 0px 160px 0px;
+		}
+
+		.d-block {
+			display: block;
+		}
+	</style>
+	<body>
+		<nav>
+			<div class="greeting_bg">
+				<div class="container">
+					<ul class="navbar">
+						<li class="nav-item-container navText name">WILLIAM LEE</li>
+						<li class="nav-item-container navText">BASED IN TAIWAN</li>
+						<li class="nav-item-container navText">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</li>
+						<li class="nav-item-container navText contactMe">CONTACT ME</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<header class="greeting_bg">
+			<div class="container greeting">
+				<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/people.png?raw=true" alt="" class="photo">
+				<div class="title">
+					<p class="greetingWord">Hi</p>
+					<p class="greetingWord">I’m a front-end developer</p>
+					<p class="greetingWord william">William</p>
+					<div class="contactBg_1 d-flex">
+						contact me
+						<div>
+							<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/arrow_outward.png?raw=true" alt="" class="arrow">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- 第二區塊 -->
+		<div class="waterbg">
+			<div class="container d-flex">
+				<!-- 左邊介紹 -->
+				<div class="introduct">
+					<p class="introduce introTitle">Introduction</p>
+					<p class="introduce introContent">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</p>
+					<div>
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/sparkle-sm.png?raw=true" alt="小閃爍">
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/sparkle-sm.png?raw=true" alt="小閃爍">
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/sparkle-sm.png?raw=true" alt="小閃爍">
+					</div>
+				</div>
+				<!-- 右邊圖示 -->
+				<div class="sparkle_sm">
+					<div class="socialMedia">
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/sparkle.png?raw=true" alt="">
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/photographer.png?raw=true" alt="">
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/people-2.png?raw=true" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container aboutArea">
+			<div class="d-flex cards">
+				<div class="cardArea">
+					<div class="card me-3 mb-3">
+						<p class="number_block">01</p>
+						<p class="number_block">Attention to Detail</p>
+						<p class="number_block_s">Meticulous code analysis and optimization.</p>
+					</div>
+					<div class="card ms-3 mb-3">
+						<p class="number_block">02</p>
+						<p class="number_block">Attention to Detail</p>
+						<p class="number_block_s">Meticulous code analysis and optimization.</p>
+					</div>
+					<div class="card mt-3 me-3">
+						<p class="number_block">03</p>
+						<p class="number_block">Attention to Detail</p>
+						<p class="number_block_s">Meticulous code analysis and optimization.</p>
+					</div>
+					<div class="card mt-3 ms-3">
+						<p class="number_block">04</p>
+						<p class="number_block">Attention to Detail</p>
+						<p class="number_block_s">Meticulous code analysis and optimization.</p>
+					</div>
+				</div>
+				<div class="aboutme">
+					<p class="aboutMeWord">About Me</p>
+					<p class="aboutDetail">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay up-to-date in the field.</p>
+				</div>
+			</div>
+		</div>
+		<!-- contact -->
+		<div class="content">
+			<div class=" contactBg d-flex">
+				<div class="contactMeArea d-flex">
+					<p class="contact">CONTACT ME</p>
+					<div class="contactArrow">
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/trending_flat_black_24dp%201.png?raw=true" alt="箭頭">
+					</div>
+				</div>
+				<div class="d-flex align-items-center">
+					<div>
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/discord.png?raw=true" alt="discord" class="discord mr-5">
+					</div>
+					<div>
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/instagram.png?raw=true" alt="instagram" class="mr-5">
+					</div>
+					<div>
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/message.png?raw=true" alt="message">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container projects">
+			<p class="myProject">My Project</p>
+			<div class="plantComputer d-flex">
+				<div class="plant">
+					<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/Rectangle%2010.png?raw=true" alt="植物">
+				</div>
+				<div class=" d-flex computerText">
+					<div class="d-flex">
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/Rectangle%2015.png?raw=true" alt="看電腦" class="me-6">
+						<div class="computerContent">
+							<p class="myProjectText">I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+							<div class="seeMore d-flex">
+								<p class="seeMoreText">SEE MORE</p>
+								<div class="seeMoreArrow">
+									<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/arrow_outward-white.png?raw=true" alt="" class="d-block">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="photoBottom d-flex">
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/Rectangle%2014.png?raw=true" alt="telephone" class="me-6 ">
+						<img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/Rectangle%2029.png?raw=true" alt="apple">
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="footer d-flex">
+			<p class="footerText">all rights reserved @hexschool2023</p>
+		</div>
+	</body>
+</html>
